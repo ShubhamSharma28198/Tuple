@@ -49,3 +49,43 @@ print("Factorial:")
 print(factorial(n))
 dict={n:factorial(n)}
 print(dict)
+
+#output-->
+
+#1-->
+enter the radius-->2
+The area is 12.56
+
+#2-->
+6
+28
+496
+
+
+#3-->
+Enter number: 12
+12 x 1 = 12
+12 x 2 = 24
+12 x 3 = 36
+12 x 4 = 48
+12 x 5 = 60
+12 x 6 = 72
+12 x 7 = 84
+12 x 8 = 96
+12 x 9 = 108
+12 x 10 = 120
+12 x 11 = 132
+12 x 12 = 144
+
+
+#4-->
+Enter base: 5
+Enter exponential value: 5
+Result: 3125
+Enter number:5
+
+
+#5-->
+Factorial:5
+120
+{5: 120}
