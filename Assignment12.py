@@ -1,22 +1,32 @@
 '''
 #ques1-->
-An access token is an object that describes the security context of a process or thread. The information in a token includes the identity and privileges of the user account associated with the process or thread.
-When a user logs on, the system verifies the user's password by comparing it with information stored in a security database. If the password is authenticated, the system produces an access token.
-Every process executed on behalf of this user has a copy of this access token.
+JSON is Like XML Because-->
+1.Both JSON and XML are "self describing" (human readable)
+2.Both JSON and XML are hierarchical (values within values)
+3.Both JSON and XML can be parsed and used by lots of programming languages
+4.Both JSON and XML can be fetched with an XMLHttpRequest
+JSON is Unlike XML Because-->
+1.JSON doesn't use end tag
+2.JSON is shorter
+3.JSON is quicker to read and write
+4.JSON can use arrays
 
-The system uses an access token to identify the user when a thread interacts with a securable object or tries to perform a system task that requires privileges. Access tokens contain the following information:
+The biggest difference is-->
+XML has to be parsed with an XML parser. 
+JSON can be parsed by a standard JavaScript function.
+**
+XML is much more difficult to parse than JSON.
+JSON is parsed into a ready-to-use JavaScript object.
+**
+Using XML-->
+1.Fetch an XML document
+2.Use the ML DOM to loop through the document
+3.Extract values and store in variables
 
-1.The security identifier (SID) for the user's account
-2.SIDs for the groups of which the user is a member
-3.A logon SID that identifies the current logon session
-4.A list of the privileges held by either the user or the user's groups
-5.An owner SID
-6.The SID for the primary group
-7.The default DACL that the system uses when the user creates a securable object without specifying a security descriptor
-8.The source of the access token
-9.Whether the token is a primary or impersonation token
-10.An optional list of restricting SIDs
-11.Current impersonation levels
+Using JSON-->
+1.Fetch a JSON string
+2.JSON.Parse the JSON string
+
 
 #ques2
 facebook=151.101.65.121  #ip address
@@ -45,18 +55,50 @@ Also, website administrators are often curious to know when Google web crawlers 
 Analyzing web server logs reveals the IP addresses of crawlers but not their domains.
 
 #ques3-->
-import tweepy
-consumer_key = '7EyzTcAkINVS3T2pb165'
-consumer_secret = 'a44R7WvbMW7L8I656Y4l'
-access_token = 'z00Xy9AkHwp8vSTJ04L0'
-access_token_secret = 'A1cK98w2NXXaCWMqMW6p'
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
-api.update_status('Hello Python Central!')
+What is HTTP?
+The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.
+HTTP works as a request-response protocol between a client and server
+A web browser may be the client, and an application on a computer that hosts a web site may be the server.
+
+The GET Method-->
+GET is used to request data from a specified resource.
+GET is one of the most common HTTP methods.
+**Note that the query string (name/value pairs) is sent in the URL of a GET request:
+/test/demo_form.php?name1=value1&name2=value2**
+
+Some other notes on GET requests-->
+1.GET requests can be cached
+2.GET requests remain in the browser history
+3.GET requests can be bookmarked
+4.GET requests should never be used when dealing with sensitive data
+5.GET requests have length restrictions
+6.GET requests is only used to request data (not modify)
+
+The POST Method-->
+POST is used to send data to a server to create/update a resource.
+POST is one of the most common HTTP methods.
+**The data sent to the server with POST is stored in the request body of the HTTP request:
+POST /test/demo_form.php HTTP/1.1
+Host: w3schools.com
+name1=value1&name2=value2**
+
+Some other notes on POST requests-->
+1.POST requests are never cached
+2.POST requests do not remain in the browser history
+3.POST requests cannot be bookmarked
+4.POST requests have no restrictions on data length
+
+The PUT Method-->
+PUT is used to send data to a server to create/update a resource.
+-->The difference between POST and PUT is that PUT requests are idempotent. 
+-->That is, calling the same PUT request multiple times will always produce the same result.
+-->In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+
+The DELETE Method-->
+The DELETE method deletes the specified resource.
 
 #ques4-->
-API( is a part of library which defines how an application communicates with external code
+API( is a part of library which defines how an application communicates with external code)
 API can be written in any language.
 Library is written in same language which is a collection of all the functionalities required for the use case.
 For example : Numpy is a library of Python, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
