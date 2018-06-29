@@ -40,6 +40,8 @@ Google uses the following public IP address ranges:
 74.125.0.0 – 74.125.255.255
 209.85.128.0 – 209.85.255.255
 216.239.32.0 – 216.239.63.255
+Ip address ofInstagram-->
+31.13.76.84
 
 Only certain addresses from Google's pool work at any given time depending on how Google chooses to deploy its web server network, which is why a random example above one of these ranges may or may not work for you at a specific time.
 When you find an IP address that works for you, make a note of it for future use.
