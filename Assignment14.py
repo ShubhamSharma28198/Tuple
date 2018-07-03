@@ -4,15 +4,9 @@ d=f.readlines()
 print("last line is-->",d[-1])
 
 #ques2-->
-f=open('xyz.txt','r',encoding='utf8')
-d=f.readlines()
-words=[]
-for line in d:
-    words=words+(line.split())
-print(words)
-for w in words:
-    print(w)
-f.close()
+with open("xyz.txt",'r',encoding='utf8') as t:
+    d=t.read().split()
+    print(len(d))
 
 #ques3-->
 with open("xyz.txt",encoding='utf8') as f:
@@ -46,131 +40,7 @@ file2.close()
 #1-->
 last line is--> That’s why it’s a sin to kill a mockingbird.” – Harper Lee, To Kill a Mockingbird
 #2-->
-['“Atticus', 'said', 'to', 'Jem', 'one', 'day,', '“I’d', 'rather', 'you', 'shot', 'at', 'tin', 'cans', 'in', 'the', 'backyard,', 'but', 'I', 'know', 'you’ll', 'go', 'after', 'birds.', 'Shoot', 'all', 'the', 'blue', 'jays', 'you', 'want,', 'if', 'you', 'can', 'hit', '‘em,', 'but', 'remember', 'it’s', 'a', 'sin', 'to', 'kill', 'a', 'mockingbird.”', 'That', 'was', 'the', 'only', 'time', 'I', 'ever', 'heard', 'Atticus', 'say', 'it', 'was', 'a', 'sin', 'to', 'do', 'something,', 'and', 'I', 'asked', 'Miss', 'Maudie', 'about', 'it.', '“Your', 'father’s', 'right,”', 'she', 'said.', '“Mockingbirds', 'don’t', 'do', 'one', 'thing', 'except', 'make', 'music', 'for', 'us', 'to', 'enjoy.', 'They', 'don’t', 'eat', 'up', 'people’s', 'gardens,', 'don’t', 'nest', 'in', 'corn', 'cribs,', 'they', 'don’t', 'do', 'one', 'thing', 'but', 'sing', 'their', 'hearts', 'out', 'for', 'us.', 'That’s', 'why', 'it’s', 'a', 'sin', 'to', 'kill', 'a', 'mockingbird.”', '–', 'Harper', 'Lee,', 'To', 'Kill', 'a', 'Mockingbird']
-“Atticus
-said
-to
-Jem
-one
-day,
-“I’d
-rather
-you
-shot
-at
-tin
-cans
-in
-the
-backyard,
-but
-I
-know
-you’ll
-go
-after
-birds.
-Shoot
-all
-the
-blue
-jays
-you
-want,
-if
-you
-can
-hit
-‘em,
-but
-remember
-it’s
-a
-sin
-to
-kill
-a
-mockingbird.”
-That
-was
-the
-only
-time
-I
-ever
-heard
-Atticus
-say
-it
-was
-a
-sin
-to
-do
-something,
-and
-I
-asked
-Miss
-Maudie
-about
-it.
-“Your
-father’s
-right,”
-she
-said.
-“Mockingbirds
-don’t
-do
-one
-thing
-except
-make
-music
-for
-us
-to
-enjoy.
-They
-don’t
-eat
-up
-people’s
-gardens,
-don’t
-nest
-in
-corn
-cribs,
-they
-don’t
-do
-one
-thing
-but
-sing
-their
-hearts
-out
-for
-us.
-That’s
-why
-it’s
-a
-sin
-to
-kill
-a
-mockingbird.”
-–
-Harper
-Lee,
-To
-Kill
-a
-Mockingbird
+124
 
 #3-->
 out.txt-->
