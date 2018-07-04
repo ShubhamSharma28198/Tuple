@@ -14,8 +14,14 @@ print(ele)
 
 #ques3-->
 sentence = "A, very very; irregular_sentence"
-ele=re.sub('[\W]',' ',sentence)
+ele=re.sub('[\W_]',' ',sentence)
 print(ele)
+
+
+#ques4-->
+tweet = "'Good advice! RT @TheNextWeb: What I would do differently if I was learning to code today'"
+x=re.sub('!.{17}','',tweet)
+print(x)
 
 #OUTPUT-->
 #1-->
@@ -24,5 +30,5 @@ print(ele)
 ['jeff42', 'amazon', 'com']
 #2-->
 ['Betty', 'bought', 'bit', 'butter', 'But', 'butter', 'bitter', 'bought', 'better', 'butter', 'bitter', 'butter', 'better']
-#3-->
-A  very very  irregular_sentence
+#3-->A  very very  irregular sentence
+#4-->'Good adviceWhat I would do differently if I was learning to code today'
