@@ -1,4 +1,4 @@
-'''#QUES1-->
+#QUES1-->
 from tkinter import *
 root=Tk()
 hwL=Label(root,text="Hello World!!")
@@ -47,7 +47,7 @@ b2.pack()
 exitB=Button(text="Exit",width=25,command=root.destroy,)
 exitB.pack(side=BOTTOM)
 root.mainloop()
-'''
+
 #QUES4-->
 from tkinter import *
 root=Tk()
@@ -55,7 +55,7 @@ def write():
     name=uP+uL
     print("Your Name is:",name)
 
-root.title("LOGIN PAGE")
+root.title("DETAILS:")
 frame=Frame(root)
 frame.pack()
 uL=Label(frame,text="First Name:")
