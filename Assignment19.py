@@ -50,27 +50,19 @@ root.mainloop()
 
 #QUES4-->
 from tkinter import *
-root=Tk()
-def write():
-    name=uP+uL
-    print("Your Name is:",name)
-
-root.title("DETAILS:")
-frame=Frame(root)
-frame.pack()
-uL=Label(frame,text="First Name:")
-uL.pack()
-#uL.grid(row=0,column=0,sticky="e")
-uP=Label(frame,text="Last Name:")
-uP.pack()
-#uP.grid(row=1,column=0,sticky="e")
-eB=Entry(root,bd=5)
-#eB.grid(row=1,column=0,sticky="E")
-eB.pack()
-eP=Entry(root,bd=5)
-#eP.grid(row=1,column=0,sticky="e")
-eP.pack()
-b=Button(text="SUBMIT",width=25,command=write)
+root = Tk()
+root.geometry('300x300')
+L1 = Label(text='NAME',background='yellow')
+L1.pack()
+e1 = Entry(L1)
+e1.pack()
+def write() :
+    ent = e1.get()
+    L2= Label(root,text ='Your name is :  \n %s'%(ent),background='pink')
+    L2.pack()
+b= Button (root, text = "SUBMIT", command = write)
 b.pack()
+button_1 = Button (root, text = "Exit", command = root.destroy)
+button_1.pack(side=BOTTOM)
 root.mainloop()
 
