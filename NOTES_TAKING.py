@@ -261,13 +261,10 @@ try:
     t1.place(x=0, y=320)
 
     root.mainloop()
-
-
-
 except pm.DatabaseError as e:
     if con:
         con.rollback()
-        print("problem", e)
+        print("ERROR", e)
 finally:
     cursor.close()
     con.close()
